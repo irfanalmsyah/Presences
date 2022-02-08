@@ -53,6 +53,18 @@ presence.on("UpdateData", async () => {
 		});
 	}
 
+	if (path ==="/mod/page/view.php"){
+		const course_name = document.querySelector("h1")
+		const quiz_name = document.querySelector("h2")
+
+		return presence.setActivity({
+			details: `Viewing ${course_name.textContent}`,
+			state: quiz_name.textContent,
+			largeImageKey: "logoipb",
+			startTimestamp: Math.floor(Date.now() / 1000)
+		});
+	}
+
 	if (path ==="/mod/forum/view.php"){
 		const course_name = document.querySelector("h1")
 		const quiz_name = document.querySelector("h2")
