@@ -6,7 +6,7 @@
 	},
 	"service": "IPB Course",
 	"description": {
-		"en": "IPB University Learning Management System"
+		"en": "IPB Course is IPB University learning management system (LMS) website"
 	},
 	"url": "course.ipb.ac.id",
 	"version": "1.0.0",
